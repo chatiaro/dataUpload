@@ -4,7 +4,14 @@
     <title>QubeHealth Upload Details</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+    <script src="js/script.js"></script>
+    <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase-auth.js"></script>
+    <script>
+    </script>
 </head>
 
 <body>
@@ -12,17 +19,17 @@
         <div class="center">
             <p style="font-size: 25px;margin-bottom: 2px;">Welcome to</p>
             <img src="assets/logo.png" height="65px" />
-            <form action="upload_docs.html">
-                <p style="font-size: 14px;">Enter your registered Mobile Number</p>
-                <div class="phoneNoContainer">
-                    <span class="prefix"><b>+91</b></span>
-                    <input type="tel" pattern="[0-9]{10}" maxlength="10" class="phoneNo" />
-                    <button>Get OTP</button>
-                </div>
-                <p style="font-size: 14px;">Enter OTP</p>
-                <input class="otp" />
-                <input type="submit" class="verify" value="Verify" />
-            </form>
+
+            <p style="font-size: 14px;">Enter your registered Mobile Number</p>
+            <div class="phoneNoContainer">
+                <span class="prefix"><b>+91</b></span>
+                <input type="tel" pattern="[0-9]{10}" maxlength="10" class="phoneNo" id="phoneNo" />
+                <button type="button" id="recaptcha">Get OTP</button>
+            </div>
+            <p style="font-size: 14px;">Enter OTP</p>
+            <input class="otp" id="otp" />
+            <input type="submit" class="verify" value="Verify" onclick="onVerifyCodeSubmit()" />
+
         </div>
     </div>
 </body>

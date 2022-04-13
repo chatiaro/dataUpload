@@ -63,6 +63,10 @@ button {
     border-color: grey;
 }
 
+.otp:focus {
+    outline: none;
+}
+
 .verify {
     width: 90%;
     text-align: center;

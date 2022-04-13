@@ -23,4 +23,5 @@ function validate() {
         flag = !(currElem.value == "");
     });
     return flag;
+
 }

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function goToPage(pageNo) {
+            alert(0);
+            document.getElementsByClassName("tab")[pageNo].classList.add("active");
+        }
+    </script>
+    <meta charset="utf-8" />
+    <title>Upload Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="css/upload_docs.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<span class="material-icons md-48" style="margin-top: 40px; margin-left: 10px;">keyboard_backspace</span>
+<p class="title">Update your Personal Details</p>
+<p class="description">Please
+    <b>confirm</b> your professional details provided by your company HR. Make sure all the fields are filled. These details are required to check your Credit Eligiblity</p>
+<div class="tab-container">
+    <button class="tab" onclick="goToPage(0)"> Personal Details</button>
+    <button class="tab" onclick="goToPage(1)"> Professional Details</button>
+    <button class="tab" onclick="goToPage(2)"> Bank Details</button>
+</div>
+
+<body>
+    <div class="swiper mySwiper ">
+        <div class="swiper-wrapper ">
+            <div class="swiper-slide ">
+                <form id="form1">
+                    <div class="input-group ">
+                        <label>Enter Your First Name</label>
+                        <div class="input-container ">
+                            <input class="text " />
+                            <span class="material-icons md-48 " style="margin-right: 10px; ">edit</span>
+                        </div>
+                    </div>
+                    <div class="input-group ">
+                        <label>Enter Your Middle Name</label>
+                        <div class="input-container ">
+                            <input class="text " />
+                            <span class="material-icons md-48 " style="margin-right: 10px; ">edit</span>
+                        </div>
+                    </div>
+
+                    <div class="input-group ">
+                        <label>Enter Your Last Name</label>
+                        <div class="input-container ">
+                            <input class="text " />
+                            <span class="material-icons md-48 " style="margin-right: 10px; ">edit</span>
+                        </div>
+                    </div>
+
+                    <div class="input-group ">
+                        <label>Enter Your Employee ID</label>
+                        <div class="input-container ">
+                            <input class="text " />
+                            <span class="material-icons md-48 " style="margin-right: 10px; ">edit</span>
+                        </div>
+                    </div>
+
+                    <div class="input-group ">
+                        <label>Enter Your Date Of Birth</label>
+                        <div class="input-container ">
+                            <input class="text " type="date " />
+                        </div>
+                    </div>
+
+                    <div class="input-group ">
+                        <label>Select Your Gender</label>
+                        <div class="input-container ">
+                            <select name="gender ">
+                            <option value="male ">Male</option>
+                            <option value="female ">Female</option>
+                            <option value="others ">Others</option>
+                            
+                          </select>
+                        </div>
+                    </div>
+
+                    <div class="input-group ">
+                        <label>Enter Your Address (As per Aadhaar)</label>
+                        <div class="input-container ">
+                            <input class="text " />
+                            <span class="material-icons md-48 " style="margin-right: 10px; ">edit</span>
+                        </div>
+                    </div>
+
+                    <div class="input-group ">
+                        <label>Enter Your Pincode</label>
+                        <div class="input-container ">
+                            <input class="text " type="number " />
+                            <span class="material-icons md-48 " style="margin-right: 10px; ">edit</span>
+                        </div>
+                    </div>
+
+
+                    <div class="input-group ">
+                        <label>Enter Your City</label>
+                        <div class="input-container ">
+                            <input class="text " />
+                            <span class="material-icons md-48 " style="margin-right: 10px; ">edit</span>
+                        </div>
+                    </div>
+
+                    <div class="input-group ">
+                        <label>Enter Your State</label>
+                        <div class="input-container ">
+                            <input class="text " />
+                            <span class="material-icons md-48 " style="margin-right: 10px; ">edit</span>
+                        </div>
+                    </div>
+
+                    <div class="input-group ">
+                        <label>Enter Your Personal Mobile Number</label>
+                        <div class="input-container ">
+                            <input class="text " />
+                            <span class="material-icons md-48 " style="margin-right: 10px; ">edit</span>
+                        </div>
+                    </div>
+
+                    <div class="input-group ">
+                        <label>Enter Your Personal E-Mail ID</label>
+                        <div class="input-container ">
+                            <input class="text " />
+                            <span class="material-icons md-48 " style="margin-right: 10px; ">edit</span>
+                        </div>
+                    </div>
+
+                    <div class="input-group ">
+                        <label>Enter Your PAN Card Numberr</label>
+                        <div class="input-container ">
+                            <input class="text " />
+                            <span class="material-icons md-48 " style="margin-right: 10px; ">edit</span>
+                        </div>
+                    </div>
+
+                    <div class="input-group ">
+                        <label>Enter Your Aadhaar Card Number</label>
+                        <div class="input-container ">
+                            <input class="text " />
+                            <span class="material-icons md-48 " style="margin-right: 10px; ">edit</span>
+                        </div>
+                    </div>
+                    <button type="button" class="verify" value="Verify" onclick="validate()">Verify</button>
+
+                    <div style="height: 20px "></div>
+                </form>
+
+            </div>
+            <div class="swiper-slide ">
+                <form>
+                    <div class="input-group ">
+                        <label>Enter the department you work in</label>
+                        <div class="input-container ">
+                            <input class="text " />
+                            <span class="material-icons md-48 " style="margin-right: 10px; ">edit</span>
+                        </div>
+                    </div>
+
+                    <div class="input-group ">
+                        <label>Enter your designation in the company</label>
+                        <div class="input-container ">
+                            <input class="text " />
+                            <span class="material-icons md-48 " style="margin-right: 10px; ">edit</span>
+                        </div>
+                    </div>
+
+                    <div class="input-group ">
+                        <label>Enter your monthly salary</label>
+                        <div class="input-container ">
+                            <input class="text " />
+                            <span class="material-icons md-48 " style="margin-right: 10px; ">edit</span>
+                        </div>
+                    </div>
+
+                    <div class="input-group ">
+                        <label>Enter Your Official Email ID</label>
+                        <div class="input-container ">
+                            <input class="text " />
+                            <span class="material-icons md-48 " style="margin-right: 10px; ">edit</span>
+                        </div>
+                    </div>
+                    <button type="button" class="verify" value="Verify" onclick="validate()">Verify</button>
+                    <div style="height: 20px "></div>
+                </form>
+            </div>
+            <div class="swiper-slide ">
+                <form>
+                    <div class="input-group ">
+                        <label>Enter your Bank Name</label>
+                        <div class="input-container ">
+                            <input class="text " />
+                            <span class="material-icons md-48 " style="margin-right: 10px; ">edit</span>
+                        </div>
+                    </div>
+
+                    <div class="input-group ">
+                        <label>Enter your bank IFSC Code</label>
+                        <div class="input-container ">
+                            <input class="text " />
+                            <span class="material-icons md-48 " style="margin-right: 10px; ">edit</span>
+                        </div>
+                    </div>
+
+                    <div class="input-group ">
+                        <label>Enter your bank</label>
+                        <div class="input-container ">
+                            <input class="text " />
+                            <span class="material-icons md-48 " style="margin-right: 10px; ">edit</span>
+                        </div>
+                    </div>
+
+                    <div class="input-group ">
+                        <label>Enter Your Official Email ID</label>
+                        <div class="input-container ">
+                            <input class="text " />
+                            <span class="material-icons md-48 " style="margin-right: 10px; ">edit</span>
+                        </div>
+                    </div>
+                    <button type="button" class="verify" value="Verify" onclick="validate()">Verify</button>
+                    <div style="height: 20px "></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js "></script>
+    <script src="js/upload_docs.js "></script>
+</body>
+
+</html>

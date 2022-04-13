@@ -1,0 +1,121 @@
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: white;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 20px;
+}
+
+.swiper {
+    width: 100%;
+    height: auto;
+}
+
+.swiper-slide {
+    font-size: 18px;
+    background: #fff;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title {
+    color: #85C454;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.description {
+    color: gray;
+    font-size: 15px;
+}
+
+.tab-container {
+    display: flex;
+    cursor: pointer;
+}
+
+.tab {
+    flex: 1;
+    font-size: 15px;
+    color: #85C454;
+    text-align: center;
+    line-height: 1.55;
+    border: 0px;
+    background-color: transparent;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.tab.active {
+    color: #0099FF;
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+}
+
+label {
+    font-size: 13px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 2px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 10px;
+}
+
+input.text {
+    flex-grow: 2;
+    border: none;
+    font-size: 18px;
+}
+
+input.text:focus {
+    outline: none;
+}
+
+select {
+    flex-grow: 2;
+    border: none;
+    font-size: 18px;
+    background-color: transparent;
+}
+
+select:focus {
+    outline: none;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.verify {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    border: 0px;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #85C454;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}

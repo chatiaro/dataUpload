@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>QubeHealth Upload Details</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+</head>
+
+<body>
+    <div class="container">
+        <div class="center">
+            <p style="font-size: 25px;margin-bottom: 2px;">Welcome to</p>
+            <img src="assets/logo.png" height="65px" />
+            <form action="upload_docs.html">
+                <p style="font-size: 14px;">Enter your registered Mobile Number</p>
+                <div class="phoneNoContainer">
+                    <span class="prefix"><b>+91</b></span>
+                    <input type="tel" pattern="[0-9]{10}" maxlength="10" class="phoneNo" />
+                    <button>Get OTP</button>
+                </div>
+                <p style="font-size: 14px;">Enter OTP</p>
+                <input class="otp" />
+                <input type="submit" class="verify" value="Verify" />
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

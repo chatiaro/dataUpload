@@ -53,7 +53,7 @@ function onVerifyCodeSubmit() {
             var user = result.user;
             window.verifyingCode = false;
             window.confirmationResult = null;
-            window.location.href = "http://127.0.0.1:3000/upload_docs.html"
+            window.location.href = "upload_docs.html"
         }).catch(function(error) {
             window.verifyingCode = false;
             alert('Wrong Verification code');
